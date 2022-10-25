@@ -1,0 +1,23 @@
+<div>
+    <mat-toolbar style="background-color: greenyellow;">
+        <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
+            <button matTooltip="Home" mat-icon-button>
+                <mat-icon>home</mat-icon>
+            </button>
+        </a>
+        <span style="margin-left: 1%;">Eureka!</span>
+        <span style="flex: 1 1 auto;"></span>
+
+        <a *ngIf="showLoginButton" [routerLink]="['/login']" routerLinkActive="router-link-active">
+            <button matTooltip="Login" mat-icon-button>
+                <mat-icon>login</mat-icon>
+            </button>
+        </a>
+
+        <a *ngIf="showSigninButton" [routerLink]="['/signin']" routerLinkActive="router-link-active">
+            <button matTooltip="Sign in" mat-icon-button >
+                <mat-icon>account_box</mat-icon>
+            </button>
+        </a>
+    </mat-toolbar>
+</div>

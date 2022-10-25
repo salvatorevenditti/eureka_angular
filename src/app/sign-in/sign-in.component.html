@@ -1,0 +1,29 @@
+<app-navbar [loginPage]="false" [isLoggedIn]="false" [registerPage]="true"></app-navbar>
+<p></p>
+<div>
+    <form id="body_inner" [formGroup]="signInForm" (ngSubmit)="submitForm()" style="display: block; float: center;" >
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <mat-icon matSuffix>alternate_email</mat-icon>
+            <input matInput formControlName="email" placeholder="Email@test.com">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <mat-icon matSuffix>lock</mat-icon>
+            <input matInput type="password" formControlName="password">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Confirm password</mat-label>
+            <mat-icon matSuffix>lock</mat-icon>
+            <input matInput [errorStateMatcher]="matcher" type="password" formControlName="confirm">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Phone number</mat-label>
+            <mat-icon matSuffix>phone</mat-icon>
+            <input matInput type="tel" formControlName="tel" placeholder="es. +00 000 000 0000">
+        </mat-form-field>
+        <button mat-raised-button style="width: 92%" type="submit" color="primary" >Unisciti a noi!</button>
+    </form>
+</div>

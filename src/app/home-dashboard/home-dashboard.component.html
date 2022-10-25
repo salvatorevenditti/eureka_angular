@@ -1,0 +1,101 @@
+<app-navbar [isLoggedIn]="_signed_master || _signed_user"></app-navbar>
+
+<!-- DASHBOARD STANDARD HOME -->
+<div>
+    <div style="margin: 5% 20% 5% 30%;">
+        <h2>Eureka! e' il nuovo portale di amministrazione per le tue attività</h2>
+        <h4 style="font-weight: normal; margin-left: 15%;">Da qui potrai gestire e supervisionare comodamente:</h4>
+    </div>
+
+    <div style="display:flex; flex-direction: row; margin-bottom: 3%;">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>add_shopping_cart</mat-icon>
+                </div>
+                <mat-card-title>Prenotazioni</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image
+                src="https://imageio.forbes.com/specials-images/dam/imageserve/1128442176/960x0.jpg?format=jpg&width=960">
+            <mat-card-content>
+                <p>
+                    Con la possibilità di poter visualizzare gli elementi in stile <b>grafico ad 'Albero'</b>, avrai
+                    sempre a disposizione una panoramica <b>realtime</b> di ciò che è stato <b>prenotato</b> e di ciò
+                    che è rimasto <b>invenduto</b>.
+                    <br><br>Comodo vero? Lascia un feedback!
+                </p>
+            </mat-card-content>
+            <button mat-button>LIKE</button>
+            <button mat-button>CONDIVIDI</button>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>euro_symbol</mat-icon>
+                </div>
+                <mat-card-title>Prodotti e servizi</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://webheroeshq.com/wp-content/uploads/2020/05/commrc.jpg">
+            <mat-card-content>
+                <p>
+                    Potrai <b>aggiungere</b>, <b>eliminare</b> e <b>modificare</b> i prodotti ed i servizi offerti dalla
+                    tua compagnia. Il tutto attuabile tramite un'apposita sezione di <b>editing dinamico</b>.
+                    <br><br>Cosa aspetti? <br>Non dimenticare di lasciare un feedback!
+                </p>
+            </mat-card-content>
+            <button mat-button>LIKE</button>
+            <button mat-button>CONDIVIDI</button>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>face</mat-icon>
+                </div>
+                <mat-card-title>Staff</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image
+                src="https://t2informatik.de/en/wp-content/uploads/sites/2/2021/06/employee-turnover.png">
+            <mat-card-content>
+                <p>
+                    Potrai visualizzare e gestire <b>l'organigramma</b> del tuo <b>staff</b>: <b>ferie</b>,
+                    <b>permessi</b> e gestione dei <b>turni</b> non saranno più un problema!
+                    <br><br>Ancora dubbi? <br> Provaci e poi lascia un feedback!
+                </p>
+            </mat-card-content>
+            <button mat-button>LIKE</button>
+            <button mat-button>CONDIVIDI</button>
+        </mat-card>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div>
+        <mat-card id="card_abbonamento">
+            <mat-card-header>
+                <mat-card-title><h2>Piano di abbonamento</h2></mat-card-title>
+            </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        Il nostro piano di abbonamento prevede cadenza<b> mensile</b>. <br>
+                        Esso comprende l'accesso al portale e le relative abilitazioni utili a svolgere le attività
+                        offerte dal sistema in uso.<br><br>
+
+                        Per il <b>primo mese</b> d'abbonamento, <b>offriamo noi</b> la quota di iscrizione!<br>
+                        Sei libero di <b>revocare</b> l'abbonamento quando vuoi!<br><br>
+
+                        La quota di iscrizione è di <b>100€ mensili</b>.<br>
+                        Cosa aspetti? <b>Unisciti a noi</b>!<br> <br>
+                    </p>
+                </mat-card-content>
+                <a [routerLink]="['/login']" routerLinkActive="router-link-active">
+                    <button mat-button>Accedi</button>
+                </a>
+
+                <a style="margin-left: 45%;" [routerLink]="['/signin']" routerLinkActive="router-link-active">
+                    <button mat-button>Registrati</button>
+                </a>
+        </mat-card>
+    </div>
+</div>

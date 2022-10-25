@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#body_outer {
+    width: 100%;
+    display: inline-block;
+    background-image: url("https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830025.jpg?w=2000");
+}
+
+#body_inner {
+    width: 250px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mat-raised-button.mat-primary {
+    color: black;
+    background-color: greenyellow;
+    font: bold;
+}
+
+.mat-icon-button {
+    color: black;
+}
